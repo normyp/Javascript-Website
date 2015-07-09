@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<script language="Javascript" src="test.js"></script>
+		<!--<script language="Javascript" src="jqueryfunctions.js"></script>-->
+
+ 		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+
+ 		<script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+
+		<script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+
+		<!--<link rel="stylesheet" href="/resources/demos/style.css">-->
+
+		<style>
+			#draggable { width: 150px; height: 150px; padding: 0.5em; }
+		</style>
+
+		<script>
+ 			$(function()
+			{
+    				$( "#draggable" ).draggable();
+  			});
+  		</script>
+
+	</head>
+
+	<body>
+
+	<script language="Javascript">set_images();</script>
+
+	<script language="Javascript">var imageArray = get_images();</script>
+
+	<script language="Javascript">var i = getCount();</script>
+
+<input type="button" value="Smile" onclick="show_image(imageArray[i], 390, 285, 'Smile')" /> 
+
+		<button onclick=
+    "change_image();"> Change image </button> 
+
+	<button onclick=
+    "delete_image();"> Delete image </button> 
+		<button onclick=
+    "print_images();"> Print em </button> 
+
+	<form>
+	Width:<br>
+	<input type="text" name="width">
+	<br>
+	Height:<br>
+	<input type="text" name="height">
+	<br>
+	<input type="submit" value="Submit">
+	</form>
+	</body>
+
+</html>
